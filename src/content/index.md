@@ -6,17 +6,17 @@ path: /
 ---
 
 Hector is a little dinosaur  
-Who lives in the forest.  
+who lives in the forest.  
 He spends all his days eating flowers  
-And rest.
+and resting.
 ![page 1](../images/page1.png)
 
 ---
 
 But you see, poor Hector  
-Is very very slow.  
+is very, very slow.  
 Flowers are not so tasty  
-But what else could he eat?
+but what else could he eat?
 ![page 2](../images/page2.png)
 
 ---
@@ -32,7 +32,7 @@ Hopefully no one.
 “Hi Bunny. How are you?”  
 “Hi Hector, not eating flowers today?”  
 “I was just about to try this carrot”, replies Hector.  
-“Interesting”, the bunny thinks for a minute...
+“Interesting”, the bunny says, thinking for a minute...
 ![page 4](../images/page4.png)
 
 ---
@@ -40,12 +40,12 @@ Hopefully no one.
 “You’re eating my carrot!” cries Hector.  
 “Sorry, you’re too slow.  
 And everyone knows that carrots  
-Are my favourite food.”
+are my favourite food.”
 ![page 5](../images/page5.png)
 
 ---
 
-Later, on top of a rock, he’s searching  
+Later, on top of a rock, he’s searching.  
 “What else could I eat?”  
 Something sweet and juicy, he’s thinking.  
 But can you see anything?
@@ -56,21 +56,21 @@ But can you see anything?
 Oh look, an apple!  
 That must be good.  
 Can you see anyone  
-Who might steal his food?
+who might steal his food?
 ![page 7](../images/page7.png)
 
 ---
 
 “Hi Bear. How are you?” asks Hector.  
-“I’m hungry”, said the Bear.  
+“I’m hungry”, says the Bear.  
 “Me too!” replies Hector.  
 “Let’s see who can get this apple first then”, says Bear.
 ![page 8](../images/page8.png)
 
 ---
 
-“I thought bears’ favourite food was honey?…”  
-But Bear is already eating the apple  
+“I thought a bear's favourite food was honey?…”  
+But Bear is already eating the apple.  
 Hector has been too slow again.
 
 ![page 9](../images/page9.png)
@@ -93,8 +93,8 @@ Who else might want this salad?
 
 ---
 
-Hector wants to run.  
-But he’s never been too good at running.  
+Hector wants to run 
+but he’s never been too good at running.  
 Just a few more steps.  
 But the snail is getting closer.
 ![page 12](../images/page12.png)
@@ -108,50 +108,50 @@ But the snail is much faster.
 
 ![page 13](../images/page13.png)
 
-“Don’t finish it: we can still be friends!”  
+“Don’t finish it! We can still be friends!”  
 Tries Hector one more time  
-Desperately...
+desperately...
 
 ![page 14](../images/page14.png)
 
 ---
 
-Once again, Hector was too slow  
-There’s nothing left  
-The salad is gone  
-And there’s no more food around him.
+Once again, Hector was too slow.  
+There’s nothing left.
+The salad is gone
+and there’s no more food around him.
 ![page 15](../images/page15.png)
 
 ---
 
-When a little mouse  
-Comes to offer him a nut.  
-“I’m small and fast, I can give you more.  
+Then a little mouse  
+comes to offer him a nut.  
+“I’m small and fast, and I can get you more nuts.  
 You’re big and strong, you can be my protector.”
 ![page 16](../images/page16.png)
 
 ---
 
-Hector is not alone anymore  
+Hector is not alone anymore.  
 He is so happy!  
-Hopefully no one will still his new friend  
+Hopefully no one will steal his new friend.  
 Can you see anybody?
 ![page 17](../images/page17.png)
 
 ---
 
-Oh no, a fox! “This mouse looks yummy  
-Do you mind to share with me?” ask Fox.  
-“Well”, answers Hector, “if you want it  
-You’ll have to do something for me.
+Oh no, a fox! “This mouse looks yummy.  
+Do you mind if we share it?” asks Fox.  
+“Well”, answers Hector, “if you want it,  
+you’ll have to do something for me.”
 ![page 18](../images/page18.png)
 
 ---
 
-Mice are my favourite food  
-But I think those nuts taste much better  
-Go! I hold the mouse, you try the nut  
-Right behind you, tell me, is it tasty?”
+“Mice are my favourite food” says Hector,   
+“but I think those nuts taste much better. 
+Go! I'll hold the mouse, you try the nut  
+right behind you. Tell me, is it tasty?”
 ![page 19](../images/page19.png)
 
 ---
@@ -159,7 +159,7 @@ Right behind you, tell me, is it tasty?”
 “Did you just play a trick on me?” says Fox.  
 “Where is the mouse, I want to know!”  
 “I’m sorry”, Hector answers the Fox  
-“I ate it all, you’re too slow!”
+“I ate it all, you’re far too slow!”
 ![page 20](../images/page20.png)
 
 ---
