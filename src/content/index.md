@@ -7,14 +7,14 @@ path: /
 
 Hector is a little dinosaur  
 Who lives in the forest.  
-He spends all his days eating flowers  
+He spends all of his days eating flowers  
 And rest.
 ![page 1](../images/page1.png)
 
 ---
 
 But you see, poor Hector  
-Is very very slow.  
+Is very, very slow.  
 Flowers are not so tasty  
 But what else could he eat?
 ![page 2](../images/page2.png)
@@ -24,13 +24,13 @@ But what else could he eat?
 One day, he finds a carrot.  
 Looking around him he wonders:  
 “Is there anyone who might steal my food?”  
-Hopefully no one.
+Hopefully none!
 ![page 3](../images/page3.png)
 
 ---
 
 “Hi Bunny. How are you?”  
-“Hi Hector, not eating flowers today?”  
+“Hi Hector, are you not eating flowers today?”  
 “I was just about to try this carrot”, replies Hector.  
 “Interesting”, the bunny thinks for a minute...
 ![page 4](../images/page4.png)
@@ -134,14 +134,14 @@ You’re big and strong, you can be my protector.”
 
 Hector is not alone anymore  
 He is so happy!  
-Hopefully no one will still his new friend  
+Hopefully no one will steal his new friend  
 Can you see anybody?
 ![page 17](../images/page17.png)
 
 ---
 
 Oh no, a fox! “This mouse looks yummy  
-Do you mind to share with me?” ask Fox.  
+Do you mind to share with me?” Fox asks.  
 “Well”, answers Hector, “if you want it  
 You’ll have to do something for me.
 ![page 18](../images/page18.png)
