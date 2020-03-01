@@ -30,140 +30,140 @@ export const Image = ({ name }) => {
           }
         }
       }
-      page_1: file(relativePath: { eq: "page 1.png" }) {
+      page_1: file(relativePath: { eq: "page1.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_2: file(relativePath: { eq: "page 2.png" }) {
+      page_2: file(relativePath: { eq: "page2.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_4: file(relativePath: { eq: "page 4.png" }) {
+      page_4: file(relativePath: { eq: "page4.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_5: file(relativePath: { eq: "page 5.png" }) {
+      page_5: file(relativePath: { eq: "page5.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_6: file(relativePath: { eq: "page 6.png" }) {
+      page_6: file(relativePath: { eq: "page6.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_7: file(relativePath: { eq: "page 7.png" }) {
+      page_7: file(relativePath: { eq: "page7.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_8: file(relativePath: { eq: "page 8.png" }) {
+      page_8: file(relativePath: { eq: "page8.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_9: file(relativePath: { eq: "page 9.png" }) {
+      page_9: file(relativePath: { eq: "page9.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_10: file(relativePath: { eq: "page 10.png" }) {
+      page_10: file(relativePath: { eq: "page10.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_11: file(relativePath: { eq: "page 11.png" }) {
+      page_11: file(relativePath: { eq: "page11.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_12: file(relativePath: { eq: "page 12.png" }) {
+      page_12: file(relativePath: { eq: "page12.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_13: file(relativePath: { eq: "page 13.png" }) {
+      page_13: file(relativePath: { eq: "page13.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_14: file(relativePath: { eq: "page 14.png" }) {
+      page_14: file(relativePath: { eq: "page14.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_15: file(relativePath: { eq: "page 15.png" }) {
+      page_15: file(relativePath: { eq: "page15.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_16: file(relativePath: { eq: "page 16.png" }) {
+      page_16: file(relativePath: { eq: "page16.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_17: file(relativePath: { eq: "page 17.png" }) {
+      page_17: file(relativePath: { eq: "page17.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_18: file(relativePath: { eq: "page 18.png" }) {
+      page_18: file(relativePath: { eq: "page18.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_19: file(relativePath: { eq: "page 19.png" }) {
+      page_19: file(relativePath: { eq: "page19.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_20: file(relativePath: { eq: "page 20.png" }) {
+      page_20: file(relativePath: { eq: "page20.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      page_21: file(relativePath: { eq: "page 21.png" }) {
+      page_21: file(relativePath: { eq: "page21.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -173,5 +173,5 @@ export const Image = ({ name }) => {
     }
   `)
 
-  return <Img fluid={data[name].childImageSharp.fluid} />
+  return <Img fluid={data?.[name]?.childImageSharp?.fluid} />
 }
