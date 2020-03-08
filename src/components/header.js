@@ -44,7 +44,6 @@ const Header = ({ siteTitle }) => {
     }
   `)
 
-  console.log(data)
   return (
     <Wrapper>
       <Logo>
