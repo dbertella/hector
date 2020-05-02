@@ -21,7 +21,13 @@ const H1 = styled.h1`
   font-size: 2.5rem;
   color: #185122;
 `
-
+const Cta = styled.a`
+  border-radius: 4px;
+  padding: 0.5rem 2rem;
+  background: rgba(47, 160, 67, 0.8);
+  color: white;
+  text-align: center;
+`
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { html, frontmatter } = markdownRemark
@@ -30,6 +36,15 @@ export default function Template({ data }) {
       <SEO title="Home" />
       <H1>{frontmatter.title}</H1>
       <Page dangerouslySetInnerHTML={{ __html: html }} />
+      <Page>
+        <Cta
+          href="https://tinyurl.com/hector-the-little-dinosaur"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Buy now on Amazon
+        </Cta>
+      </Page>
     </Layout>
   )
 }

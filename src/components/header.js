@@ -84,7 +84,7 @@ const Header = ({ siteTitle }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          buy it on amazon
+          Buy Now
         </a>
       </Links>
     </Wrapper>
