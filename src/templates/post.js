@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Image } from "../components/image"
 
 const Page = styled.div`
   text-align: center;
@@ -30,13 +29,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO title="Home" />
       <H1>{frontmatter.title}</H1>
-      <Page>
-        <Image name="cover" />
-      </Page>
-      <div className="blog-post">
-        <Page dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
-      <Image name="end" />
+      <Page dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }

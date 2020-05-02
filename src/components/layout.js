@@ -35,8 +35,14 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Aurelie Mercier
-          {` `}
+          © {new Date().getFullYear()},{" "}
+          <a
+            href="https://www.instagram.com/aurelie_mercier/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Aurelie Mercier
+          </a>
         </footer>
       </div>
     </>

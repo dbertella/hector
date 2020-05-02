@@ -18,17 +18,37 @@ const Wrapper = styled.header`
   padding: 1.5rem;
 `
 
-const WhiteLink = styled(Link)`
-  color: white;
+const Links = styled.div`
+  display: flex;
+  a {
+    color: white;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
 `
 
-const Logo = styled.div`
+const WhiteLink = styled(Link)``
+
+const Logo = styled(Link)`
   position: absolute;
   left: 1.5rem;
   bottom: 0;
   height: 80px;
   display: flex;
   align-items: center;
+  color: white;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
 `
 
 const Header = ({ siteTitle }) => {
@@ -46,31 +66,27 @@ const Header = ({ siteTitle }) => {
 
   return (
     <Wrapper>
-      <Logo>
+      <Logo to="/">
         <Img fixed={data.file.childImageSharp.fixed} />
         <H2>HECTOR</H2>
       </Logo>
-      <div>
+      <Links>
         <WhiteLink
           activeStyle={{
-            textDecoration: "none",
             cursor: "default",
           }}
-          to="/"
+          to="/en"
         >
-          en
-        </WhiteLink>{" "}
-        |{" "}
-        <WhiteLink
-          activeStyle={{
-            textDecoration: "none",
-            cursor: "default",
-          }}
-          to="/it"
-        >
-          it
+          read the story
         </WhiteLink>
-      </div>
+        <a
+          href="https://tinyurl.com/hector-the-little-dinosaur"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          buy it on amazon
+        </a>
+      </Links>
     </Wrapper>
   )
 }
