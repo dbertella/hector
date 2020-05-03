@@ -2,9 +2,11 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
-import { Flex, Heading } from "theme-ui"
+import { Flex, Heading, Link as ExternalLink, Text } from "theme-ui"
+import { AiOutlineAmazon } from "react-icons/ai"
+import { GoBook } from "react-icons/go"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "hector-logo.png" }) {
@@ -27,7 +29,7 @@ const Header = ({ siteTitle }) => {
         as={Link}
         sx={{
           position: "absolute",
-          left: "1.5rem",
+          left: [1, 3],
           bottom: "0",
           height: "80px",
           alignItems: "center",
@@ -38,21 +40,33 @@ const Header = ({ siteTitle }) => {
         <Heading sx={{ m: 0 }}>HECTOR</Heading>
       </Flex>
       <Flex>
-        <Link
+        <Flex
+          as={Link}
           activeStyle={{
             cursor: "default",
           }}
+          sx={{
+            alignItems: "center",
+          }}
           to="/en"
         >
-          read the story
-        </Link>
-        <a
-          href="https://tinyurl.com/hector-the-little-dinosaur"
+          <GoBook />
+          <Text ml={1}>the story</Text>
+        </Flex>
+        <ExternalLink
+          href="https://tinyurl.com/hector-the-little-dinosExternalLinkur"
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
         >
-          Buy Now
-        </a>
+          <AiOutlineAmazon />
+          <Text ml={1} sx={{ display: ["none", "block"] }}>
+            Buy Now
+          </Text>
+        </ExternalLink>
       </Flex>
     </Flex>
   )

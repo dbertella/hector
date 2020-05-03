@@ -1,12 +1,6 @@
 ---
 title: Hector, il piccolo dinosauro
 path: /it
-pages: 
-  - image: page1
-    text: Hector is a little dinosaur  
-          who lives in the forest.  
-          He spends all his days eating flowers  
-          and resting.
 ---
 
 ![Cover](../images/Cover.png)

@@ -45,10 +45,6 @@ export default {
         },
       },
     },
-    footer: {
-      color: "white",
-      backgroundColor: "black",
-    },
   },
   cards: {
     primary: {

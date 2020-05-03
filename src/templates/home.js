@@ -8,12 +8,7 @@ const Page = props => (
   <Box
     sx={{
       textAlign: "center",
-      fontSize: 4,
-      hr: { m: "3rem auto", width: "50%" },
-      a: {
-        color: "primary",
-        textDecoration: "none",
-      },
+      fontSize: 3,
     }}
     {...props}
   />
@@ -25,20 +20,15 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
-      <Heading
-        as="h1"
-        sx={{
-          textAlign: "center",
-          fontSize: 5,
-          color: "secondary",
-          mt: 5,
-          mb: 3,
-        }}
-      >
-        {frontmatter.title}
-      </Heading>
       <Page dangerouslySetInnerHTML={{ __html: html }} />
-      <Box sx={{ textAlign: "center" }}></Box>
+      <Box sx={{ textAlign: "center" }} mb={4}>
+        {frontmatter.specs.map(spec => (
+          <Box key={spec.title} mb={1}>
+            <strong>{spec.title}: </strong>
+            {spec.text}
+          </Box>
+        ))}
+      </Box>
     </Layout>
   )
 }
