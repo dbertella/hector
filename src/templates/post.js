@@ -8,7 +8,7 @@ const Page = props => (
   <Box
     sx={{
       textAlign: "center",
-      fontSize: 4,
+      fontSize: 2,
       hr: { m: "3rem auto", width: "50%" },
       a: {
         color: "primary",
@@ -29,9 +29,8 @@ export default function Template({ data }) {
         as="h1"
         sx={{
           textAlign: "center",
-          fontSize: 5,
+          fontSize: [3, null, 4],
           color: "secondary",
-          mt: 5,
           mb: 3,
         }}
       >

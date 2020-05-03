@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 import { Flex, Heading, Link as ExternalLink, Text } from "theme-ui"
-import { AiOutlineAmazon } from "react-icons/ai"
+import { AiOutlineShopping } from "react-icons/ai"
 import { GoBook } from "react-icons/go"
 
 const Header = () => {
@@ -51,10 +51,10 @@ const Header = () => {
           to="/en"
         >
           <GoBook />
-          <Text ml={1}>the story</Text>
+          <Text ml={1} sx={{ display: ["none", "block"] }}>the story</Text>
         </Flex>
         <ExternalLink
-          href="https://tinyurl.com/hector-the-little-dinosExternalLinkur"
+          href="https://tinyurl.com/hector-the-little-dinosaur"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -62,8 +62,8 @@ const Header = () => {
             alignItems: "center",
           }}
         >
-          <AiOutlineAmazon />
-          <Text ml={1} sx={{ display: ["none", "block"] }}>
+          <AiOutlineShopping />
+          <Text ml={1} sx={{ display: ["none", null, "block"] }}>
             Buy Now
           </Text>
         </ExternalLink>

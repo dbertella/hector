@@ -2,13 +2,16 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box, Heading } from "theme-ui"
+import { Box } from "theme-ui"
 
 const Page = props => (
   <Box
     sx={{
       textAlign: "center",
-      fontSize: 3,
+      fontSize: 2,
+      h1: {
+        fontSize: 3
+      }
     }}
     {...props}
   />

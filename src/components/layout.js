@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import { Box, Link, Text } from "theme-ui"
-import { AiOutlineAmazon } from "react-icons/ai"
+import { AiOutlineShopping } from "react-icons/ai"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,10 +28,10 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Box
-        style={{
-          margin: `0 auto`,
+        sx={{
+          m: `0 auto`,
           maxWidth: 860,
-          p: 3,
+          px: 3,
         }}
       >
         <main>{children}</main>
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiOutlineAmazon />
+            <AiOutlineShopping />
             <Text ml={1}>Buy now on Amazon</Text>
           </Link>
         </Box>
@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Written and illustrated by Aurelie Mercier
+            Aurelie Mercier
           </Link>
         </Box>
       </Box>

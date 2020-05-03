@@ -1,5 +1,5 @@
 export default {
-  breakpoints: ["40em", "56em", "64em"],
+  breakpoints: ["25em", "40em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512, 1024],
   fonts: {
     body: "Montserrat, sans-serif",
@@ -35,6 +35,7 @@ export default {
       p: "26px",
       alignItems: "center",
       justifyContent: "flex-end",
+      height: "80px",
       a: {
         color: "white",
         textTransform: "uppercase",
