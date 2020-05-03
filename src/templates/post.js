@@ -1,49 +1,65 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Box, Heading, Link } from "theme-ui"
 
-const Page = styled.div`
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 32px;
-  hr {
-    margin: 3rem 0;
-  }
-`
+const Page = props => (
+  <Box
+    sx={{
+      textAlign: "center",
+      fontSize: "24px",
+      fontStyle: "normal",
+      fontVariant: "normal",
+      fontWeight: "400",
+      lineHeight: "32px",
+      hr: { margin: "3rem 0" },
+      a: {
+        color: "primary",
+        textDecoration: "none",
+      },
+    }}
+    {...props}
+  />
+)
 
-const H1 = styled.h1`
-  text-align: center;
-  font-size: 2.5rem;
-  color: #185122;
-`
-const Cta = styled.a`
-  border-radius: 4px;
-  padding: 0.5rem 2rem;
-  background: rgba(47, 160, 67, 0.8);
-  color: white;
-  text-align: center;
-`
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { html, frontmatter } = markdownRemark
   return (
     <Layout>
       <SEO title="Home" />
-      <H1>{frontmatter.title}</H1>
+      <Heading
+        as="h1"
+        sx={{
+          textAlign: "center",
+          fontSize: 5,
+          color: "secondary",
+          mt: 5,
+          mb: 3,
+        }}
+      >
+        {frontmatter.title}
+      </Heading>
       <Page dangerouslySetInnerHTML={{ __html: html }} />
       <Page>
-        <Cta
+        <Link
+          sx={{
+            borderRadius: "4px",
+            p: "0.5rem 2rem",
+            bg: "primary",
+            color: "white !important",
+            textAlign: "center",
+            "&:hover": {
+              bg: "secondary",
+            },
+          }}
           href="https://tinyurl.com/hector-the-little-dinosaur"
           target="_blank"
           rel="noopener noreferrer"
         >
           Buy now on Amazon
-        </Cta>
+        </Link>
       </Page>
     </Layout>
   )
