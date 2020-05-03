@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import { Link, Box } from "theme-ui"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,16 +34,16 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <Box as="footer" mt={5}>
           © {new Date().getFullYear()},{" "}
-          <a
+          <Link
             href="https://www.instagram.com/aurelie_mercier/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Aurelie Mercier
-          </a>
-        </footer>
+          </Link>
+        </Box>
       </div>
     </>
   )
