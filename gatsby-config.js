@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -86,4 +87,3 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 }
-

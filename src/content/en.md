@@ -185,6 +185,6 @@ Right behind you, tell me, is it tasty?”
 
 ---
 
-That was the beginning of a beautiful friendships
+That was the beginning of a beautiful friendship.
 
 ![End](../images/End.png)
