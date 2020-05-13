@@ -48,7 +48,7 @@ const Header = () => {
           sx={{
             alignItems: "center",
           }}
-          to="/en"
+          to="/hector"
         >
           <GoBook />
           <Text ml={1} sx={{ display: ["none", "block"] }}>the story</Text>

@@ -1,6 +1,6 @@
 ---
 title: Hector, il piccolo dinosauro
-path: /it
+path: /it/hector
 ---
 
 ![Cover](../images/Cover.png)

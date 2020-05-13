@@ -1,9 +1,9 @@
 ---
 title: Hector, the little dinosaur
-path: /en
+path: /hector
 ---
 
-[Read the story in italian](/it)
+[Read the story in italian](/it/hector)
 
 ![Cover](../images/Cover.png)
 
