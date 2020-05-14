@@ -1,5 +1,0 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
-https://aureliemercier.com/en https://aureliemercier.com/hector 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://hector-the-dinosaur.netlify.app/* https://aureliemercier.com/:splat 301!
