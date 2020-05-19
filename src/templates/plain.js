@@ -2,16 +2,17 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box } from "theme-ui"
+import { Box, Heading } from "theme-ui"
 
 const Page = props => (
   <Box
     sx={{
-      textAlign: "center",
       fontSize: 2,
-      h1: {
-        fontSize: 3
-      }
+      hr: { m: "3rem auto", width: "50%" },
+      a: {
+        color: "primary",
+        textDecoration: "none",
+      },
     }}
     {...props}
   />
@@ -23,14 +24,21 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={frontmatter.title} />
+      <Heading
+        as="h1"
+        sx={{
+          textAlign: "center",
+          fontSize: [3, null, 4],
+          color: "secondary",
+          mb: 3,
+        }}
+      >
+        {frontmatter.title}
+      </Heading>
       <Page dangerouslySetInnerHTML={{ __html: html }} />
-      <Box sx={{ textAlign: "center" }} mb={4}>
-        {frontmatter.specs.map(spec => (
-          <Box key={spec.title} mb={1}>
-            <strong>{spec.title}: </strong>
-            {spec.text}
-          </Box>
-        ))}
+      <Box sx={{ mt: 300, textAlign: "center" }}>
+        <h3>Hector the little dinosaur</h3>
+        <p>A book writtend and illustrated by Aurelie Mercier</p>
       </Box>
     </Layout>
   )

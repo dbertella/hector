@@ -24,7 +24,7 @@ export default function Template({ data }) {
   const { html, frontmatter } = markdownRemark
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title={frontmatter.title} />
       <Heading
         as="h1"
         sx={{
@@ -37,7 +37,6 @@ export default function Template({ data }) {
         {frontmatter.title}
       </Heading>
       <Page dangerouslySetInnerHTML={{ __html: html }} />
-      <Box sx={{ textAlign: "center" }}></Box>
     </Layout>
   )
 }
