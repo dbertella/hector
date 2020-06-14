@@ -1,4 +1,3 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
 /en /hector 301
 /it /it/hector 301
 

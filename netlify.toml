@@ -1,0 +1,29 @@
+[[redirects]]
+from = "/en"
+to = "/hector"
+status = 301
+force = true
+
+[[redirects]]
+from = "/it"
+to = "/it/hector"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://hector-the-dinosaur.netlify.app/*"
+to = "https://hector.aureliemercier.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://aureliemercier.com/*"
+to = "https://hector.aureliemercier.com/:splat"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://www.aureliemercier.com/*"
+to = "https://hector.aureliemercier.com/:splat"
+status = 302
+force = true
