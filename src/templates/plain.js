@@ -50,10 +50,6 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        specs {
-          title
-          text
-        }
       }
     }
   }

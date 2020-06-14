@@ -79,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Montserrat`],
+        fonts: [`Montserrat:ital,wght@0,700;1,400`, `Mouse Memoirs`],
         display: "swap",
       },
     },

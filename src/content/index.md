@@ -2,22 +2,27 @@
 title: A children picture book about friendship
 path: /
 template: home
-specs:
-  - title: Paperback
-    text: 45 pages
-  - title: Language
-    text: English
-  - title: Dimension
-    text: 21 x 0.3 x 16 cm
 ---
 
-![Cover](../images/BookCover.png)
+# Hector the little dinosaur
 
-# A children picture book about friendship
+![Cover](../images/Hector-the-little-dinosaur.png)
 
-Hector is a cute little dinosaur who has a small peculiarity:  
+## About the story
+
+Hector is a cute little dinosaur who has a small peculiarity:
 he’s very, very slow.
 
 Poor Hector has never eaten anything else than flowers, but one day, he decides to try something new…
 
-### A book written and illustrated by Aurelie Mercier
+## About the book
+
+Written and illustrated by Aurelie Mercier
+
+**Paperback:** 45 pages  
+**Language:** English  
+**Dimension:** 21 x 0.3 x 16 cm
+
+## About the app
+
+Download Hector the little dinosaur on Google Play Store and listen to Liam (4 years old) reading out loud the story.

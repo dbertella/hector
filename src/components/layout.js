@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import { Box, Link, Text } from "theme-ui"
-import { AiOutlineShopping } from "react-icons/ai"
+import { Box, Link, Text, Flex } from "theme-ui"
+import amazonButton from "../images/available_at_amazon_en_vertical_rev.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,38 +35,72 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Box sx={{ textAlign: "center" }}>
+        <Flex sx={{ justifyContent: "center", alignItems: "center" }}>
+          
+        </Flex>
+        <Flex sx={{ justifyContent: "center", alignItems: "center" }}>
           <Link
             sx={{
-              borderRadius: "4px",
-              p: "0.5rem 2rem",
-              bg: "primary",
-              color: "white !important",
-              display: "inline-flex",
-              justifyContent: "center",
-              alignItems: "center",
-              "&:hover": {
-                bg: "secondary",
+              borderRadius: "8px",
+              bg: "text",
+              py: 2,
+              px: 5,
+              height: 63,
+              img: {
+                maxHeight: "100%",
               },
             }}
             href="https://tinyurl.com/hector-the-little-dinosaur"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiOutlineShopping />
-            <Text ml={1}>Buy now on Amazon</Text>
+            <img alt="Get it on Amazon" src={amazonButton} />
           </Link>
-        </Box>
-        <Box as="footer" mt={5}>
-          © {new Date().getFullYear()},{" "}
+          <Link
+            sx={{
+              ml: 2,
+              width: 250,
+              top: "4px",
+              position: "relative",
+              img: {
+                maxWidth: "100%",
+              },
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://play.google.com/store/apps/details?id=hector.the.little.dinosaur&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          >
+            <img
+              alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png"
+            />
+          </Link>
+        </Flex>
+        <Flex
+          as="footer"
+          sx={{
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+          mt={5}
+        >
           <Link
             href="https://www.instagram.com/aurelie_mercier/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Aurelie Mercier
+            © {new Date().getFullYear()}, Aurelie Mercier
           </Link>
-        </Box>
+          <Text
+            sx={{
+              color: "light",
+              fontSize: 1,
+              ml: 1,
+            }}
+          >
+            Google Play and the Google Play logo are trademarks of Google LLC.
+          </Text>
+        </Flex>
       </Box>
     </>
   )

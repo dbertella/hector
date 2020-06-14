@@ -2,20 +2,21 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box } from "theme-ui"
+import { Box, useThemeUI } from "theme-ui"
 
-const Page = props => (
-  <Box
-    sx={{
-      textAlign: "center",
-      fontSize: 2,
-      h1: {
-        fontSize: 3
-      }
-    }}
-    {...props}
-  />
-)
+const Page = props => {
+  const { theme } = useThemeUI()
+  return (
+    <Box
+      sx={{
+        textAlign: "center",
+        fontSize: 2,
+        ...theme.styles,
+      }}
+      {...props}
+    />
+  )
+}
 
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -24,14 +25,6 @@ export default function Template({ data }) {
     <Layout>
       <SEO title={frontmatter.title} />
       <Page dangerouslySetInnerHTML={{ __html: html }} />
-      <Box sx={{ textAlign: "center" }} mb={4}>
-        {frontmatter.specs.map(spec => (
-          <Box key={spec.title} mb={1}>
-            <strong>{spec.title}: </strong>
-            {spec.text}
-          </Box>
-        ))}
-      </Box>
     </Layout>
   )
 }
@@ -42,10 +35,6 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        specs {
-          title
-          text
-        }
       }
     }
   }

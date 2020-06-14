@@ -2,27 +2,31 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
-import { Flex, Heading, Link as ExternalLink, Text } from "theme-ui"
+import { Flex, Link as ExternalLink, Text } from "theme-ui"
 import { AiOutlineShopping } from "react-icons/ai"
 import { GoBook } from "react-icons/go"
+import background from "../images/Divider.png"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "hector-logo.png" }) {
+      logo: file(relativePath: { eq: "Hector-icon.png" }) {
         childImageSharp {
-          fixed(width: 80, height: 80) {
+          fixed(width: 160, height: 120) {
             ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
+  const isHomePage =
+    typeof window !== "undefined" && window.location.pathname === "/"
 
   return (
     <Flex
       sx={{
         variant: "layout.header",
+        backgroundImage: `url(${background})`,
       }}
     >
       <Flex
@@ -33,11 +37,27 @@ const Header = () => {
           bottom: "0",
           height: "80px",
           alignItems: "center",
+          "&:hover": {
+            span: {
+              opacity: 1,
+            },
+          },
         }}
         to="/"
       >
-        <Img fixed={data.file.childImageSharp.fixed} />
-        <Heading sx={{ m: 0 }}>HECTOR</Heading>
+        <Img fixed={data.logo.childImageSharp.fixed} />
+        <Text
+          as="span"
+          sx={{
+            m: 0,
+            fontFamily: "heading",
+            fontSize: 4,
+            opacity: 0,
+            transition: "opacity 0.3s ease-in-out",
+          }}
+        >
+          {isHomePage ? "Hector" : "Back Home"}
+        </Text>
       </Flex>
       <Flex>
         <Flex
@@ -51,7 +71,9 @@ const Header = () => {
           to="/hector"
         >
           <GoBook />
-          <Text ml={1} sx={{ display: ["none", "block"] }}>the story</Text>
+          <Text ml={1} sx={{ display: ["none", "block"] }}>
+            the story
+          </Text>
         </Flex>
         <ExternalLink
           href="https://tinyurl.com/hector-the-little-dinosaur"
