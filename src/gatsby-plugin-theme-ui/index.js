@@ -29,7 +29,7 @@ export default {
   layout: {
     header: {
       color: "text",
-      background: "left 17px repeat-x",
+      background: "50% 17px repeat-x",
       position: "relative",
       mb: 3,
       p: "26px",

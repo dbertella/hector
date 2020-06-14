@@ -10,8 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import { Box, Link, Text, Flex } from "theme-ui"
+import { Box, Link, Text, Flex, Heading } from "theme-ui"
 import amazonButton from "../images/available_at_amazon_en_vertical_rev.png"
+import background from "../images/Divider.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,6 +36,17 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <Heading
+          as="h2"
+          sx={{
+            textAlign: "center",
+            background: "50% 50px",
+            backgroundImage: `url(${background})`,
+            pt: 3,
+          }}
+        >
+          Get the Book
+        </Heading>
         <Flex
           sx={{
             justifyContent: "center",

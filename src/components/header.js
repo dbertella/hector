@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 import { Flex, Link as ExternalLink, Text } from "theme-ui"
-import { AiOutlineShopping } from "react-icons/ai"
+import { AiOutlineShopping, AiOutlineUser } from "react-icons/ai"
 import { GoBook } from "react-icons/go"
 import background from "../images/Divider.png"
 
@@ -73,6 +73,21 @@ const Header = () => {
           <GoBook size={22} />
           <Text ml={1} sx={{ display: ["none", "block"] }}>
             the story
+          </Text>
+        </Flex>
+        <Flex
+          as={Link}
+          activeStyle={{
+            cursor: "default",
+          }}
+          sx={{
+            alignItems: "center",
+          }}
+          to="/author"
+        >
+          <AiOutlineUser size={22} />
+          <Text ml={1} sx={{ display: ["none", null, "block"] }}>
+            the author
           </Text>
         </Flex>
         <ExternalLink
