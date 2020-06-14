@@ -3,7 +3,7 @@ title: Hector, the little dinosaur
 path: /hector
 ---
 
-[Read the story in italian](/it/hector)
+[Italian Version 🍕](/it/hector)
 
 ![Cover](../images/Cover.png)
 
@@ -188,3 +188,5 @@ Right behind you, tell me, is it tasty?”
 That was the beginning of a beautiful friendship.
 
 ![End](../images/End.png)
+
+[Back to top](#)
