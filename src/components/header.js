@@ -70,7 +70,7 @@ const Header = () => {
           }}
           to="/hector"
         >
-          <GoBook />
+          <GoBook size={22} />
           <Text ml={1} sx={{ display: ["none", "block"] }}>
             the story
           </Text>
@@ -84,7 +84,7 @@ const Header = () => {
             alignItems: "center",
           }}
         >
-          <AiOutlineShopping />
+          <AiOutlineShopping size={22} />
           <Text ml={1} sx={{ display: ["none", null, "block"] }}>
             Buy Now
           </Text>

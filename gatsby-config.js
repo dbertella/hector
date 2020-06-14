@@ -43,7 +43,7 @@ module.exports = {
         name: `Hector the little dinosaur`,
         short_name: `Hector`,
         start_url: `/`,
-        background_color: `#2fa043`,
+        background_color: `#89B3E6`,
         theme_color: `#185122`,
         display: `minimal-ui`,
         icon: `src/images/hector.png`, // This path is relative to the root of the site.

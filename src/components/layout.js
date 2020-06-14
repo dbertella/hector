@@ -35,19 +35,25 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Flex sx={{ justifyContent: "center", alignItems: "center" }}>
-          
-        </Flex>
-        <Flex sx={{ justifyContent: "center", alignItems: "center" }}>
+        <Flex
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
           <Link
             sx={{
               borderRadius: "8px",
               bg: "text",
-              py: 2,
+              pt: "10px",
               px: 5,
-              height: 63,
+              height: 64,
+              width: 218,
+              boxSizing: "border-box",
+              m: "16px 16px 24px",
               img: {
-                maxHeight: "100%",
+                maxWidth: "100%",
               },
             }}
             href="https://tinyurl.com/hector-the-little-dinosaur"
@@ -58,10 +64,7 @@ const Layout = ({ children }) => {
           </Link>
           <Link
             sx={{
-              ml: 2,
               width: 250,
-              top: "4px",
-              position: "relative",
               img: {
                 maxWidth: "100%",
               },
@@ -81,16 +84,20 @@ const Layout = ({ children }) => {
           sx={{
             alignItems: "center",
             justifyContent: "space-between",
+            flexWrap: "wrap",
           }}
           mt={5}
         >
-          <Link
-            href="https://www.instagram.com/aurelie_mercier/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            © {new Date().getFullYear()}, Aurelie Mercier
-          </Link>
+          <Text>
+            © {new Date().getFullYear()},{" "}
+            <Link
+              href="https://www.instagram.com/aurelie_mercier/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Aurelie Mercier
+            </Link>
+          </Text>
           <Text
             sx={{
               color: "light",

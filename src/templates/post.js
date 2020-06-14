@@ -32,7 +32,6 @@ export default function Template({ data }) {
         as="h1"
         sx={{
           textAlign: "center",
-          fontSize: [4, null, 6],
           mb: 3,
         }}
       >

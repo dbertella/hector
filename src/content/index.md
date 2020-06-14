@@ -25,4 +25,4 @@ Written and illustrated by Aurelie Mercier
 
 ## About the app
 
-Download Hector the little dinosaur on Google Play Store and listen to Liam (4 years old) reading out loud the story.
+Download **Hector the little dinosaur** on Google Play Store and listen to a 4 years old reading out loud the story.
