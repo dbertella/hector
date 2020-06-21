@@ -1,5 +1,7 @@
 ---
 title: Hector, il piccolo dinosauro
+description: Discover Hector the little dinosaur, a children story book about friendship. Available on Amazon. Read the full story in Italian here 🇮🇹
+
 path: /it/hector
 ---
 

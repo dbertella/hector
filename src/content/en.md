@@ -1,9 +1,10 @@
 ---
-title: Hector, the little dinosaur
+title: Hector the little dinosaur
+description: Discover Hector the little dinosaur, a children story book about friendship. Available on Amazon. Read the full story here 👀
 path: /hector
 ---
 
-[Italian Version 🍕](/it/hector)
+[Italian Version](/it/hector)
 
 ![Cover](../images/Cover.png)
 

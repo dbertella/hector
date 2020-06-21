@@ -1,5 +1,6 @@
 ---
 title: About the author
+description: Hector the little dinosaur is a children book written and illustrated by Aurélie Mercier. Find out more about the author.
 path: /author
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: A children picture book about friendship
+description: Discover Hector the little dinosaur, a story book for children age 2-5, written and illustrated by Aurélie Mercier. 🦕 Find out more about Hector here 👉
 path: /
 template: home
 ---
@@ -19,7 +20,7 @@ Poor Hector has never eaten anything else than flowers, but one day, he decides 
 
 ## About the book
 
-Written and illustrated by Aurelie Mercier
+Written and illustrated by Aurélie Mercier
 
 **Paperback:** 45 pages  
 **Language:** English  
@@ -29,6 +30,6 @@ Written and illustrated by Aurelie Mercier
 
 ## About the app
 
-Download **Hector the little dinosaur** on Google Play Store and listen to a 4 years old reading out loud the story.
+Download **Hector the little dinosaur** on Google Play and listen to a 4 years old reading out loud the story.
 
 [Download the app from Google Play](https://play.google.com/store/apps/details?id=hector.the.little.dinosaur)

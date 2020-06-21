@@ -39,7 +39,7 @@ export default function Template({ data }) {
   const { html, frontmatter } = markdownRemark
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO title={frontmatter.title} description={frontmatter.description} />
       <Heading
         as="h1"
         sx={{
@@ -60,6 +60,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        description
       }
     }
   }
