@@ -49,11 +49,15 @@ const Header = () => {
         <Text
           as="span"
           sx={{
+            display: "none",
             m: 0,
             fontFamily: "heading",
             fontSize: 4,
             opacity: 0,
             transition: "opacity 0.3s ease-in-out",
+            "@media screen and (min-width: 40em)": {
+              display: "block",
+            },
           }}
         >
           {isHomePage ? "Hector" : "Back Home"}

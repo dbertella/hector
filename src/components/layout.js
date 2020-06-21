@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 import Header from "./header"
 import { Box, Link, Text, Flex, Heading } from "theme-ui"
@@ -68,7 +69,13 @@ const Layout = ({ children }) => {
                 maxWidth: "100%",
               },
             }}
-            href="https://tinyurl.com/hector-the-little-dinosaur"
+            onClick={() => {
+              trackCustomEvent({
+                category: "Amazon Button",
+                action: "Click",
+              })
+            }}
+            href="https://www.amazon.co.uk/Hector-little-dinosaur-Aurelie-Mercier/dp/B0875XQQ5L/ref=sr_1_1?crid=2G9KT23A1032U&dchild=1&keywords=hector+the+little+dinosaur&qid=1588351717&sprefix=hector+the+litt%2Caps%2C-1&sr=8-1"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,9 +88,15 @@ const Layout = ({ children }) => {
                 maxWidth: "100%",
               },
             }}
+            onClick={() => {
+              trackCustomEvent({
+                category: "Google Button",
+                action: "Click",
+              })
+            }}
             target="_blank"
             rel="noopener noreferrer"
-            href="https://play.google.com/store/apps/details?id=hector.the.little.dinosaur&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            href="https://play.google.com/store/apps/details?id=hector.the.little.dinosaur"
           >
             <img
               alt="Get it on Google Play"

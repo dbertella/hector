@@ -21,7 +21,7 @@ export default {
     alphaBg: "rgba(64,83,27, 0.7)",
     background: "#fff",
     primary: "#89B3E6",
-    secondary: "#185122",
+    secondary: "#054490",
     muted: "#7aa095",
     dark: "#40531b",
     light: "#D1DBE8",
@@ -117,10 +117,10 @@ export default {
       lineHeight: "body",
     },
     a: {
-      color: "primary",
+      color: "secondary",
       textDecoration: "none",
       "&:hover,\n  &:focus,\n  &:active": {
-        color: "secondary",
+        color: "primary",
       },
     },
     pre: {

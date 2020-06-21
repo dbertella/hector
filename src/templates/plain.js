@@ -10,7 +10,7 @@ const Page = props => (
       fontSize: 2,
       hr: { m: "3rem auto", width: "50%" },
       a: {
-        color: "primary",
+        color: "secondary",
         textDecoration: "none",
       },
     }}

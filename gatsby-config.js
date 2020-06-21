@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Hector, The little dinosaur`,
-    description: `Hector, The little dinosaur is a book written and illustrated by Aurelie Mercier`,
+    title: `Hector the little dinosaur`,
+    description: `Discover Hector the little dinosaur, a story book for children age 2-5, written and illustrated by Aurelie Mercier. 🦕 Find out more about Hector here 👉  `,
     author: `@FoodnQuote`,
   },
   plugins: [
@@ -44,7 +44,7 @@ module.exports = {
         short_name: `Hector`,
         start_url: `/`,
         background_color: `#89B3E6`,
-        theme_color: `#185122`,
+        theme_color: `#054490`,
         display: `minimal-ui`,
         icon: `src/images/hector.png`, // This path is relative to the root of the site.
       },
@@ -79,7 +79,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Montserrat:ital,wght@0,700;1,400`, `Mouse Memoirs`],
+        fonts: [
+          `Montserrat:ital,wght@0,700;1,400`,
+          `Mouse Memoirs`,
+          `Gloria Hallelujah`,
+        ],
         display: "swap",
       },
     },

@@ -13,8 +13,20 @@ const Page = props => {
         hr: { m: "3rem auto", width: "50%" },
         ...theme.styles,
         a: {
-          color: "primary",
+          color: "secondary",
           textDecoration: "none",
+        },
+        div: {
+          background: "rgba(255,255,255,0.7)",
+          position: "absolute",
+          zIndex: 1,
+          maxWidth: 500,
+          width: "50%",
+          left: "50%",
+          transform: "translate(-50%, 20px)",
+          p: 1,
+          borderRadius: 2,
+          fontFamily: "'Gloria Hallelujah', cursive",
         },
       }}
       {...props}
