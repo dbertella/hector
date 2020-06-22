@@ -18,15 +18,17 @@ const Page = props => {
         },
         div: {
           background: "rgba(255,255,255,0.7)",
-          position: "absolute",
-          zIndex: 1,
-          maxWidth: 500,
-          width: "50%",
-          left: "50%",
-          transform: "translate(-50%, 20px)",
           p: 1,
           borderRadius: 2,
           fontFamily: "'Gloria Hallelujah', cursive",
+          "@media screen and (min-width: 40em)": {
+            position: "absolute",
+            zIndex: 1,
+            maxWidth: 500,
+            width: "50%",
+            left: "50%",
+            transform: "translate(-50%, 20px)",
+          },
         },
       }}
       {...props}
