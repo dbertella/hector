@@ -3,6 +3,7 @@ module.exports = {
     title: `Hector the little dinosaur`,
     description: `Discover Hector the little dinosaur, a story book for children age 2-5, written and illustrated by Aurelie Mercier. 🦕 Find out more about Hector here 👉  `,
     author: `@FoodnQuote`,
+    siteUrl: `https://hector.aureliemercier.com`,
   },
   plugins: [
     {
@@ -40,6 +41,7 @@ module.exports = {
         noTrailingSlash: true,
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -23,6 +23,7 @@
     "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.10",
     "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-plugin-sitemap": "^2.4.10",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-remark-images": "^3.1.44",
     "gatsby-source-filesystem": "^2.1.46",
