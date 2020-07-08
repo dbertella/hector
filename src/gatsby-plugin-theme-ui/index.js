@@ -1,3 +1,11 @@
+const pageLink = {
+  color: "secondary",
+  textDecoration: "none",
+  "&:hover,\n  &:focus,\n  &:active": {
+    color: "primary",
+  },
+}
+
 export default {
   breakpoints: ["25em", "40em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512, 1024],
@@ -47,6 +55,9 @@ export default {
         },
       },
     },
+  },
+  links: {
+    pageLink,
   },
   cards: {
     primary: {
@@ -116,13 +127,7 @@ export default {
       fontWeight: "body",
       lineHeight: "body",
     },
-    a: {
-      color: "secondary",
-      textDecoration: "none",
-      "&:hover,\n  &:focus,\n  &:active": {
-        color: "primary",
-      },
-    },
+    a: pageLink,
     pre: {
       overflowX: "auto",
       code: {
