@@ -34,6 +34,13 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://hector.aureliemercier.com`,
+        noTrailingSlash: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -42,6 +49,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-transformer-remark`,
